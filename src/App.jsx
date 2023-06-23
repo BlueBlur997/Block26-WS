@@ -11,7 +11,7 @@ const [selectedContactId, setSelectedContactId] = useState(null);
   return (
     <>
       {selectedContactId ? (
-        <SelectedContact setSelectedContactId={setSelectedContactId} selectedContactId />
+        <SelectedContact setSelectedContactId={setSelectedContactId} selectedContactId={selectedContactId} />
       ) : (
         <ContactList setSelectedContactId={setSelectedContactId}  />
       )};

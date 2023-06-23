@@ -44,7 +44,7 @@ import ContactRow from "./ContactRow";
                 </tr>
                 {
                     contacts.map((contact) => {
-                        return <ContactRow key={contact.id} contact={contact} />;
+                        return <ContactRow key={contact.id} contact={contact} setSelectedContactId={setSelectedContactId} />;
                     }
                     )
                 }
